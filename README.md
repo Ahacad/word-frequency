@@ -26,7 +26,7 @@ yarn add @ahacad/word-frequency
 | noPunctuation | Boolean                              | true     | when set to true replace all punctuations by empty string, otherwise do nothing and keep them (which will lead to some words and punctuations be together when counting) |
 
 
-```
+```js
 import wordFrequency from "@ahacad/word-frequency"
 
 wordFrequency(text, caseSensitive, letter, noPunctuation)
@@ -34,7 +34,7 @@ wordFrequency(text, caseSensitive, letter, noPunctuation)
 
 ### Examples
 
-```
+```js
 import wordFrequency from "@ahacad/word-frequency"
 
 console.log(wordFrequency("hello world"));
