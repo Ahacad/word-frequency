@@ -1,0 +1,40 @@
+{
+  "name": "@ahacad/word-frequency",
+  "version": "0.0.0",
+  "packageManager": "pnpm@7.29.0",
+  "description": "count word frequency in text string",
+  "author": "ahacad <ahacad@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ahacad/word-frequency/issues"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.cjs",
+      "require": "./dist/index.mjs"
+    }
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "release": "bumpp && npm publish",
+    "build": "unbuild",
+    "test": "vitest"
+  },
+  "homepage": "https://github.com/ahacad/word-frequency#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahacad/word-frequency.git"
+  },
+  "dependencies": {
+    "bumpp": "^9.0.0",
+    "fast-glob": "^3.2.12",
+    "unbuild": "^1.1.2",
+    "vitest": "^0.29.2"
+  }
+}
